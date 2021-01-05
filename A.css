@@ -1,0 +1,126 @@
+  /**
+   * @author fuguijar.top
+   * A.css
+   * -v 1.0
+   *  超简易UI
+   */
+
+
+
+  /*全局*/
+  *{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+  }
+
+
+
+  /* Table */
+  
+  /*默认table*/
+  table{width:100%;empty-cells:show;background-color:transparent;border-collapse:collapse;border-spacing:0}
+  table th{text-align:left; font-weight:400}
+  /*带水平线*/
+  table th{font-weight:bold;background-color:#f9f9f9}
+  table th,table td{padding:8px;line-height:20px}
+  table td{text-align:left}
+  table tbody tr.success > td{background-color:#dff0d8}
+  table tbody tr.error > td{background-color:#f2dede}
+  table tbody tr.warning > td{background-color:#fcf8e3}
+  table tbody tr.info > td{background-color:#d9edf7}
+  table tbody + tbody{border-top:2px solid #ddd}
+  table {background-color:#fff}
+
+  /*带横向分割线*/
+  table{border-top:1px solid #ddd}
+  table th,table td{border-bottom:1px solid #ddd}
+
+  /*th带背景*/
+  table-bg thead th{background-color:#F5FAFE}
+  /*带外边框*/
+  table{border:1px solid #ddd;border-collapse:separate;*border-collapse:collapse;border-left:0}
+  table th,table td{border-left:1px solid #ddd}
+  table{border-bottom:0}
+
+  /*奇数行背景设为浅灰色*/
+  /* table tbody > tr:nth-child(odd) > td,table tbody > tr:nth-child(odd) > th{background-color:#f9f9f9} */
+  /*竖直方向padding缩减一半*/
+  table-condensed th,table-condensed td{padding:4px 5px}
+  /*鼠标悬停样式*/
+  table-hover tbody tr:hover td,table-hover tbody tr:hover th{background-color: #f5f5f5}
+  /*定义颜色*/
+  /*悬停在行*/
+  table tbody tr.active,table tbody tr.active>td,table tbody tr.active>th,table tbody tr .active{background-color:#F5F5F5!important}
+  /*成功或积极*/
+  table tbody tr.success,table tbody tr.success>td,table tbody tr.success>th,table tbody tr .success{background-color:#DFF0D8!important}
+
+  /*警告或出错*/
+  table tbody tr.warning,table tbody tr.warning>td,table tbody tr.warning>th,table tbody tr .warning{background-color:#FCF8E3!important}
+  /*危险*/
+  table tbody tr.danger,table tbody tr.danger>td,table tbody tr.danger>th,table tbody tr .danger{background-color:#F2DEDE!important}
+
+  /*表格文字对齐方式，默认是居左对齐*/
+  table .text-c th,table .text-c td{text-align:center}/*整行居中*/
+  table .text-r th,table .text-r td{text-align:right}/*整行居右*/
+  table th.text-l,table td.text-l{text-align:left!important}/*单独列居左*/
+  table th.text-c,table td.text-c{text-align:center!important}/*单独列居中*/
+  table th.text-r,table td.text-r{text-align:right!important}/*单独列居右*/
+
+
+/* Form */
+
+
+  /*默认状态*/
+  form input[type=text],textarea{box-sizing:border-box;border:solid 1px #ddd;width:100%;
+    -webkit-transition:all 0.2s linear 0s;
+    -moz-transition:all 0.2s linear 0s;
+    -o-transition:all 0.2s linear 0s;
+    transition:all 0.2s linear 0s
+
+  }
+  form input[type=text]{
+  font-size: 14px;
+  height: 31px;
+  *height: auto;
+  line-height: 1.42857;
+  padding: 4px 10px;
+  }
+
+textarea{ height:auto; font-size:14px; padding:4px}
+form input[type=text]:hover,textarea:hover{border: solid 1px #3bb4f2}
+/*得到焦点后*/
+form input[type=text].focus,textarea.focus{border:solid 1px #0f9ae0 \9;border-color:rgba(82,168,236,0.8);box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6)}
+/*不可点击*/
+form input[type=text].disabled,textarea.disabled,form input[type=text].disabled.focus,textarea.disabled.focus{background-color:#ededed; cursor:default;border-color: #ddd;
+    -webkit-box-shadow:inset 0 2px 2px #e8e7e7;
+    -moz-box-shadow:inset 0 2px 2px #e8e7e7;
+    box-shadow:inset 0 2px 2px #e8e7e7}
+/*只读状态*/
+form input[type=text].disabled,textarea.disabled{background-color:#e6e6e6; cursor:default}
+/*阴影*/
+.box-shadow,textarea.box-shadow{-ms-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}
+
+
+
+/* 按钮 */
+
+form input[type=submit],form input[type=button],button{display:inline-block;cursor:pointer;text-align:center; font-weight:400;white-space:nowrap;vertical-align: middle;*zoom:1;-webkit-transition:background-color .1s linear;-moz-transition:background-color .1s linear;-o-transition:background-color .1s linear;transition:background-color .1s linear;border-radius: 3px;padding: 4px 12px;}
+form input[type=submit],form input[type=button],button:hover,aform input[type=submit],form input[type=button],button:focus,aform input[type=submit],form input[type=button],button:active,aform input[type=submit],form input[type=button],button.active,aform input[type=submit],form input[type=button],button.disabled,aform input[type=submit],form input[type=button],button[disabled]{text-decoration:none}
+form input[type=submit],form input[type=button],button:active,form input[type=submit],form input[type=button],button.active{background-color:#ccc}
+form input[type=submit],form input[type=button],button:first-child{*margin-left:0}
+form input[type=submit],form input[type=button],button.active,form input[type=submit],form input[type=button],button:active{-moz-box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset;-webkit-box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset; box-shadow:0 1px 8px rgba(0, 0, 0, 0.125) inset}
+
+
+
+/*主要——主色 通常用于确定、提交、购买、支付等*/
+form input[type=submit],form input[type=button],button{color:#fff;background-color:#5a98de; border-color:#5a98de}
+form input[type=submit],form input[type=button],button:hover,
+form input[type=submit],form input[type=button],button:focus,
+form input[type=submit],form input[type=button],button:active,
+form input[type=submit],form input[type=button],button.active{color:#fff;background-color:#6aa2e0;border-color:#6aa2e0}
+
+
+
+
